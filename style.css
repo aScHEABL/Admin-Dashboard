@@ -18,7 +18,7 @@ body > #content {
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 8fr;
     grid-template-areas: 
-    "dashboard right-section"
+    "dashboard nav"
     "dashboard right-section";
 }
 
@@ -74,5 +74,27 @@ body > #content > #dashboard > div > div > img {
 }
 
 body > #content > #right-section {
+    height: 100%;
     grid-area: right-section;
+}
+
+body > #content > #nav {
+    height: 100%;
+    grid-area: nav;
+    display: grid;
+    grid-template-rows: 0.8fr 1fr;
+    grid-template-areas: 
+    "nav-upper-section"
+    "nav-lower-section";
+}
+
+body > #content > #nav > #nav-upper-section {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+body > #content > #nav > #nav-upper-section >
+
+body > #content > #nav > #nav-lower-section {
+
 }
