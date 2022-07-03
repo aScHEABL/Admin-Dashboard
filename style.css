@@ -90,10 +90,52 @@ body > #content > #nav {
 
 body > #content > #nav > #nav-upper-section {
     display: grid;
-    grid-template-columns: 6fr 4fr;
+    grid-template-columns: 7fr 3fr;
 }
 
-body > #content > #nav > #nav-upper-section >
+body > #content > #nav > #nav-upper-section > #nav-upper-section-left-column {
+    position: relative;
+    left: 48px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 24px 1fr;
+    gap: 16px;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-left-column > img {
+    width: 24px;
+    height: 24px;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-left-column > input {
+    width: 80%;
+    height: 30%;
+    border-radius: 16px;
+    border-style: none;
+    background-color: #dddddd;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > #notification {
+    width: 24px;
+    height: 24px;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > #profile-picture {
+    width: 48px;
+    height: 48px;
+    border-radius: 32px;
+}
+
+body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > p {
+    font-weight: 900;
+}
 
 body > #content > #nav > #nav-lower-section {
 
