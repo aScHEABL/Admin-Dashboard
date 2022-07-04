@@ -19,8 +19,8 @@ html, body {
 }
 
 body > #content {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 8fr;
@@ -308,6 +308,7 @@ body > #content > main > #project-container > #project-6 {
 }
 
 body > #content > main > #announcement-section {
+    padding-right: 32px;
     display: grid;
     grid-template-rows: 1fr 6fr;
     grid-area: announcement-section;
@@ -320,7 +321,6 @@ body > #content > main > #announcement-section > h2 {
 }
 
 body > #content > main > #announcement-section > div {
-    margin: 0px 32px 0px 0px;
     padding: 32px 32px 32px 32px;
     background-color: white;
     box-shadow: var(--box-shadow);
@@ -354,11 +354,55 @@ body > #content > main > #announcement-section > div > .line-break {
 }
 
 body > #content > main > #trending-section {
-    
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    padding: 0px 32px 24px 0px;
 }
 
 body > #content > main > #trending-section > h2 {
     font-size: 20px;
     margin: 0;
     align-self: center;
+}
+
+body > #content > main > #trending-section > div {
+    padding: 32px 32px 32px 32px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+body > #content > main > #trending-section > div > .profile-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 16px;
+}
+
+body > #content > main > #trending-section > div > .profile-container > img {
+    width: 65px;
+    height: 65px;
+    border-radius: 32px;
+}
+
+body > #content > main > #trending-section > div > .profile-container > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    gap: 2px;
+}
+
+body > #content > main > #trending-section > div > .profile-container > div > h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+body > #content > main > #trending-section > div > .profile-container > div > p {
+    margin: 0;
+    font-size: 14px;
+    color: #4b4b4b;
 }
