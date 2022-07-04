@@ -240,14 +240,43 @@ body > #content > main > #project-container > h2 {
 }
 
 body > #content > main > #project-container > div {
+    background-color: white;
     border-radius: 8px;
     border: 1px solid black;
-    height: 90%;
+    height: 100%;
+    padding: 16px 16px 16px 16px;
+    display: grid;
+    grid-template-rows: 2fr 6fr 2fr;
+    gap: 4px;
+}
+
+body > #content > main > #project-container > div > h3 {
+    align-self: end;
+    font-size: 16px;
+    margin: 0;
+}
+
+body > #content > main > #project-container > div > p {
+    margin: 0;
+}
+
+body > #content > main > #project-container > div > div {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+body > #content > main > #project-container > div > div > img {
+    width: 24px;
+    height: 24px;
 }
 
 body > #content > main > #project-container > .blank {
     border: none;
     grid-area: blank;
+    opacity: 0;
 }
 
 body > #content > main > #project-container > #project-1 {
