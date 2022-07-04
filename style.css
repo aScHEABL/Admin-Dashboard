@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --main-theme-color: #13a4dc;
+    --gray-background: #e1e8f0;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -24,7 +29,7 @@ body > #content {
 
 body > #content > #dashboard {
     display: grid;
-    background-color: #13a4dc;
+    background-color: var(--main-theme-color);
     grid-area: dashboard;
     height: 100%;
     width: 100%;
@@ -112,7 +117,7 @@ body > #content > #nav > #nav-upper-section > #nav-upper-section-left-column > i
     height: 30%;
     border-radius: 16px;
     border-style: none;
-    background-color: #dddddd;
+    background-color: var(--gray-background);
 }
 
 body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column {
@@ -127,7 +132,7 @@ body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > 
     height: 24px;
 }
 
-body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > #profile-picture {
+body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > #profile-picture-1 {
     width: 48px;
     height: 48px;
     border-radius: 32px;
@@ -138,5 +143,59 @@ body > #content > #nav > #nav-upper-section > #nav-upper-section-right-column > 
 }
 
 body > #content > #nav > #nav-lower-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 2fr 4fr;
+}
 
+body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column {
+    position: relative;
+    left: 48px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 25.6px 38.4px;
+    grid-template-areas: 
+    "profile-picture greeting-p1"
+    "profile-picture username-p2";
+    align-items: center;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column > #profile-picture-2 {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    grid-area: profile-picture;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column > p {
+    margin: 0;
+    font-weight: 900;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column > #greeting-p1 {
+    font-size: 14px;
+    grid-area: greeting-p1;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column > #username-p2 {
+    font-size: 18px;
+    grid-area: username-p2;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-right-column {
+    position: relative;
+    right: 24px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+body > #content > #nav > #nav-lower-section > #nav-lower-section-right-column > button {
+    font-size: 18px;
+    padding: 8px 32px 8px 32px;
+    border-radius: 18px;
+    border: none;
+    background-color: var(--main-theme-color);
+    color: white;
 }
