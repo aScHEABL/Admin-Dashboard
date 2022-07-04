@@ -24,7 +24,7 @@ body > #content {
     grid-template-rows: 2fr 8fr;
     grid-template-areas: 
     "dashboard nav"
-    "dashboard right-section";
+    "dashboard main";
 }
 
 body > #content > #dashboard {
@@ -78,11 +78,6 @@ body > #content > #dashboard > div > div > img {
     height: 24px;
 }
 
-body > #content > #right-section {
-    height: 100%;
-    grid-area: right-section;
-}
-
 body > #content > #nav {
     height: 100%;
     grid-area: nav;
@@ -91,11 +86,13 @@ body > #content > #nav {
     grid-template-areas: 
     "nav-upper-section"
     "nav-lower-section";
+    box-shadow: 2px 2px 5px black;
 }
 
 body > #content > #nav > #nav-upper-section {
     display: grid;
     grid-template-columns: 7fr 3fr;
+    height: 100%;
 }
 
 body > #content > #nav > #nav-upper-section > #nav-upper-section-left-column {
@@ -146,6 +143,7 @@ body > #content > #nav > #nav-lower-section {
     display: grid;
     align-items: center;
     grid-template-columns: 4fr 2fr 4fr;
+    height: 100%;
 }
 
 body > #content > #nav > #nav-lower-section > #nav-lower-section-left-column {
@@ -198,4 +196,88 @@ body > #content > #nav > #nav-lower-section > #nav-lower-section-right-column > 
     border: none;
     background-color: var(--main-theme-color);
     color: white;
+}
+
+body > #content > main {
+    position: relative;
+    top: 3px;
+    background-color: var(--gray-background);
+    height: 100%;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 5.5fr 4.5fr;
+    grid-template-areas: 
+    "project-container announcement-container"
+    "project-container trending-container";
+}
+
+body > #content > main > #project-container {
+    position: relative;
+    left: 20px;
+    bottom: 24px;
+    grid-area: project-container;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    grid-template-rows: 60px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title blank"
+    "project-1 project-2"
+    "project-3 project-4"
+    "project-5 project-6";
+    gap: 24px;
+}
+
+body > #content > main > #project-container > h2 {
+    position: relative;
+    top: 30px;
+    grid-area: title;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    align-self: center;
+}
+
+body > #content > main > #project-container > div {
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 90%;
+}
+
+body > #content > main > #project-container > .blank {
+    border: none;
+    grid-area: blank;
+}
+
+body > #content > main > #project-container > #project-1 {
+    grid-area: project-1;
+}
+
+body > #content > main > #project-container > #project-2 {
+    grid-area: project-2;
+}
+
+body > #content > main > #project-container > #project-3 {
+    grid-area: project-3;
+}
+
+body > #content > main > #project-container > #project-4 {
+    grid-area: project-4;
+}
+
+body > #content > main > #project-container > #project-5 {
+    grid-area: project-5;
+}
+
+body > #content > main > #project-container > #project-6 {
+    grid-area: project-6;
+}
+
+body > #content > main > #announcement-container {
+
+}
+
+body > #content > main > #trending-container {
+
 }
