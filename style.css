@@ -14,13 +14,13 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
 body > #content {
-    max-height: 100%;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 2fr 8fr;
     grid-template-rows: 2fr 8fr;
@@ -33,7 +33,7 @@ body > #content > #dashboard {
     display: grid;
     background-color: var(--main-theme-color);
     grid-area: dashboard;
-    height: 90%;
+    height: 100%;
     width: 100%;
     grid-template-rows: 4fr 2fr 4fr;
     align-items: center;
@@ -204,14 +204,14 @@ body > #content > main {
     position: relative;
     top: 3px;
     background-color: var(--gray-background);
-    height: 90%;
+    height: 100%;
     grid-area: main;
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: 5fr 5fr;
     grid-template-areas: 
     "project-container announcement-section"
-    "project-container trending-container";
+    "project-container trending-section";
 }
 
 body > #content > main > #project-container {
@@ -233,6 +233,7 @@ body > #content > main > #project-container {
 }
 
 body > #content > main > #project-container > h2 {
+    font-size: 20px;
     position: relative;
     top: 30px;
     grid-area: title;
@@ -309,7 +310,6 @@ body > #content > main > #project-container > #project-6 {
 body > #content > main > #announcement-section {
     display: grid;
     grid-template-rows: 1fr 6fr;
-    margin-right: 32px;
     grid-area: announcement-section;
 }
 
@@ -320,17 +320,45 @@ body > #content > main > #announcement-section > h2 {
 }
 
 body > #content > main > #announcement-section > div {
+    margin: 0px 32px 0px 0px;
+    padding: 32px 32px 32px 32px;
     background-color: white;
     box-shadow: var(--box-shadow);
     border-radius: 8px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1px 1fr 1px 1fr;
+    gap: 16px;
 }
 
-body > #content > main > #announcement-section > div > h3 {
+body > #content > main > #announcement-section > div > .announcement-card {
+    display: grid;
+    gap: 8px;
+}
+
+body > #content > main > #announcement-section > div > .announcement-card > h3 {
     margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    align-self: end;
 }
 
-body > #content > main > #trending-container {
+body > #content > main > #announcement-section > div > .announcement-card > p {
+    margin: 0;
+    font-size: 14px;
+    align-self: baseline;
+}
 
+body > #content > main > #announcement-section > div > .line-break {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+body > #content > main > #trending-section {
+    
+}
+
+body > #content > main > #trending-section > h2 {
+    font-size: 20px;
+    margin: 0;
+    align-self: center;
 }
