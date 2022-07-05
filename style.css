@@ -244,6 +244,7 @@ body > #content > main > #project-container > h2 {
 }
 
 body > #content > main > #project-container > div {
+    border-left: 10px solid var(--main-theme-color);
     background-color: white;
     border-radius: 8px;
     box-shadow: var(--box-shadow);
