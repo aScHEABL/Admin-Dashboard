@@ -1,10 +1,10 @@
 # Admin-Dashboard <br>
 
-![Screenshot](./resources/Screen%20Shot%202022-07-17%20at%205.26.13%20PM.png)
-
 This is the Admin dashboard project from [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard) <br>
 
 [Live Demo](https://ascheabl.github.io/Admin-Dashboard/) 👈 <br>
+
+![Screenshot](./resources/Screen%20Shot%202022-07-17%20at%205.26.13%20PM.png) <br>
 
 ### Built with <br>
 
